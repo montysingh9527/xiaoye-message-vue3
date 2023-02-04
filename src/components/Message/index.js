@@ -62,10 +62,10 @@ function hideMessage(app, vm, duration) {
  * @param {*} vm 实例
  */
 function setTop(vm) {
-    console.log("==vm=22==",vm)
   const { setTop, height, margin } = vm;
   // 消息索引
   const currentIndex = messageArr.value.findIndex((item) => item === vm);
+  // 设置高度
   setTop(margin * (currentIndex + 1) + height * currentIndex);
 }
 

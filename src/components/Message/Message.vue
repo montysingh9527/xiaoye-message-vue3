@@ -59,7 +59,7 @@ defineExpose({
   height: 40,
   margin: 20,
 });
-const styleClass = computed(() => ["jspp-message", props.style]);
+const styleClass = computed(() => ["jspp-message", props.type]);
 
 const { visible, top } = toRefs(state);
 </script>
@@ -78,20 +78,20 @@ const { visible, top } = toRefs(state);
   border-radius: 5px;
   transition: top .3s ease-out;
   &.success {
-    background-color: #f0f9eb;
-    color: #529b2e;
+    background-color: #7dc855;
+    color: #ffffff;
   }
   &.warning {
-    background-color: #fdf6ec;
-    color: #b88230;
+    background-color: #f3be70;
+    color: #ffffff;
   }
   &.message {
     background-color: #fdf6ec;
     color: #b6b0a6;
   }
   &.error {
-    background-color: #fdf6ec;
-    color: #dc572e;
+    background-color: #fd5a5a;
+    color: #ffffff;
   }
 }
 
